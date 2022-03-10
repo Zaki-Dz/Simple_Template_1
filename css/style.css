@@ -50,6 +50,12 @@ p {
 	margin-bottom: 50px;
 }
 
+@media (max-width: 767px) {
+	.landing h1 {
+		text-align: center;
+	}
+}
+
 .landing a {
 	padding: 10px 20px;
 	border: 2px solid;
@@ -69,6 +75,13 @@ header .container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 20px;
+}
+
+@media (max-width: 767px) {
+	header .container {
+		flex-direction: column;
+	}
 }
 
 header .logo span {
@@ -78,6 +91,7 @@ header .logo span {
 header nav ul {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -104,6 +118,12 @@ header nav ul li:hover {
 	gap: 40px;
 }
 
+@media (max-width: 767px) {
+	.features .feature {
+		text-align: center;
+	}
+}
+
 .features .feature h2 {
 	margin-bottom: 20px;
 }
@@ -114,6 +134,14 @@ header nav ul li:hover {
 
 .about .container {
 	display: flex;
+}
+
+@media (max-width: 767px) {
+	.about .container {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 }
 
 .about .portrait {
@@ -128,6 +156,12 @@ header nav ul li:hover {
 
 .about .content {
 	padding: calc(var(--section-padding) / 2);
+}
+
+@media (max-width: 767px) {
+	.about .content {
+		padding: calc(var(--section-padding) / 2) 0;
+	}
 }
 
 .about .content .info {
@@ -153,6 +187,12 @@ header nav ul li:hover {
 	gap: 20px;
 }
 
+@media (max-width: 767px) {
+	.about .content .hobbies .hobby {
+		flex-direction: column;
+	}
+}
+
 .about .content .hobbies .hobby i {
 	color: var(--secondary-color);
 	margin-top: 10px;
@@ -168,6 +208,13 @@ header nav ul li:hover {
 
 .my-skills .container {
 	display: flex;
+}
+
+@media (max-width: 767px) {
+	.my-skills .container {
+		flex-direction: column;
+		text-align: center;
+	}
 }
 
 .my-skills .text {
@@ -276,6 +323,13 @@ header nav ul li:hover {
 .educations .education {
 	display: flex;
 	gap: 40px;
+}
+
+@media (max-width: 767px) {
+	.educations .education {
+		flex-direction: column;
+		text-align: center;
+	}
 }
 
 .educations .text {
@@ -389,6 +443,12 @@ header nav ul li:hover {
 	gap: 40px;
 }
 
+@media (max-width: 767px) {
+	.contact-me .container {
+		flex-direction: column;
+	}
+}
+
 .contact-me .info {
 	flex: 1;
 }
@@ -397,9 +457,22 @@ header nav ul li:hover {
 	margin-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+	.contact-me .info h2 {
+		text-align: center;
+	}
+}
+
 .contact-me .info .desc,
 .contact-me .info .address {
 	margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+	.contact-me .info .desc,
+	.contact-me .info .address {
+		text-align: center;
+	}
 }
 
 .contact-me .info p {
@@ -413,6 +486,13 @@ header nav ul li:hover {
 	display: inline-block;
 }
 
+@media (max-width: 767px) {
+	.contact-me .info .contact {
+		margin: 0 auto;
+		width: fit-content;
+	}
+}
+
 .contact-me form {
 	flex: 1;
 	display: flex;
@@ -421,6 +501,12 @@ header nav ul li:hover {
 
 .contact-me form label {
 	margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+	.contact-me form {
+		text-align: center;
+	}
 }
 
 .contact-me form input,
@@ -442,6 +528,12 @@ header nav ul li:hover {
 	align-self: start;
 	padding: 15px 30px;
 	font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+	.contact-me form button {
+		margin: 0 auto;
+	}
 }
 
 footer {
